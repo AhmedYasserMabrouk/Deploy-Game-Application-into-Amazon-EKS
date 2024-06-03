@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ahmed-game
+  labels:
+    app: game
+spec:
+  containers:
+    - name: ahmed-2048
+      image: alexwhen/docker-2048
+      ports:
+        - containerPort: 80
